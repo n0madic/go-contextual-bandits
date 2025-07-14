@@ -51,7 +51,7 @@ This repository provides three state-of-the-art contextual bandit algorithms, ea
 - **Content Platforms**: When you have rich feature representations
 - **Large Item Catalogs**: Thanks to efficient caching mechanism
 
-### 2. Bayesian Linear Regression Thompson Sampling (`bl-rts/`)
+### 2. Bayesian Linear Regression Thompson Sampling (`blr-ts/`)
 
 **BLR-TS** uses Bayesian inference to maintain posterior distributions over reward parameters and samples from these distributions for exploration.
 
@@ -112,7 +112,7 @@ This repository provides three state-of-the-art contextual bandit algorithms, ea
 ## Installation
 
 ```bash
-go get github.com/n0madic/contextual-bandits
+go get github.com/n0madic/go-contextual-bandits
 ```
 
 ## Usage Examples
@@ -127,7 +127,7 @@ import (
     "log"
     "math/rand"
 
-    "github.com/n0madic/go-contextual-bandits/linucb-hybrid"
+    linucbhybrid "github.com/n0madic/go-contextual-bandits/linucb-hybrid"
 )
 
 func main() {
